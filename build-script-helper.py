@@ -169,7 +169,7 @@ def invoke_swiftpm(
         verbose=verbose,
     )
     if action == "test":
-        args += ["--test-product", product, "--disable-testable-imports"]
+        args += ["--test-product", product, "--disable-testable-imports", "--parallel"]
     else:
         args += ["--product", product]
 
